@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shantanu & Aditi Wedding Invitation</title>
+    <link rel="icon" href="assets/icon.jpg" type="image/jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Sora:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button class="music-toggle" id="music-toggle" type="button" aria-label="Play wedding music">
+      <span class="music-vinyl" aria-hidden="true"></span>
+      <span class="music-label" id="music-label">Play</span>
+    </button>
+    <audio id="wedding-audio" loop preload="auto">
+      <source src="assets/Game_of_Thrones_Theme_-_Indian_Classical_Version_iPad_and_ROLI_Seaboard_Rise_-_Mahesh_Raghvan_256kbps.webm" type="audio/webm" />
+    </audio>
+
+    <header class="hero" id="top">
+      <div class="hero-overlay"></div>
+      <div class="hero-ribbon">
+        <h1 class="hero-names">Shantanu & Aditi</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="story" id="story">
+        <div class="section-divider" aria-hidden="true"></div>
+        <div class="section-title">
+          <h2 class="section-heading">A celebration of love and togetherness</h2>
+        </div>
+        <div class="story-layout story-layout--centered">
+          <div class="scratch-feature reveal">
+            <div class="scratch-header">
+              <!-- <h3 class="scratch-title">The Celebration</h3> -->
+              <p class="scratch-instruction">Gently scratch to reveal</p>
+            </div>
+
+            <div class="scratch-card scratch-card--reception" id="scratch-card">
+              <div class="scratch-reveal">
+                <div class="scratch-text">
+                  <p class="scratch-date">Saturday, 14 Feb</p>
+                  <div class="scratch-event">
+                    <span class="scratch-label">Reception</span>
+                    <span class="scratch-time">7 PM onwards</span>
+                  </div>
+                </div>
+              </div>
+              <canvas class="scratch-canvas" id="scratch-canvas" aria-hidden="true"></canvas>
+            </div>
+          </div>
+          <aside class="venue-panel reveal">
+            <p class="venue-kicker">Venue</p>
+            <h3 class="venue-heading">Utsav Garden & Hall</h3>
+            <p class="venue-address">Nashik</p>
+            <div class="venue-map">
+              <iframe
+                title="Utsav Garden & Hall map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.1570050268033!2d73.83216037609425!3d19.95989838143533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddc01a8588fdfb%3A0xd3fdb358e0b2e747!2sUtsav%20Garden%20%26%20Hall!5e0!3m2!1sen!2sin!4v1769600563582!5m2!1sen!2sin"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <a
+              class="ghost-cta venue-cta"
+              href="https://www.google.com/maps/place/Utsav+Garden+%26+Hall/@19.9598984,73.8321604,17z"
+              target="_blank"
+              rel="noopener"
+              >Get Directions</a
+            >
+          </aside>
+        </div>
+      </section>
+
+      <section class="countdown" id="countdown">
+        <div class="section-title">
+          <p class="section-kicker">Countdown</p>
+          <h2 class="section-heading">Reception begins in</h2>
+        </div>
+        <div class="countdown-grid" aria-live="polite">
+          <div class="countdown-card">
+            <span class="countdown-value" id="days">00</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-card">
+            <span class="countdown-value" id="hours">00</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-card">
+            <span class="countdown-value" id="minutes">00</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-card">
+            <span class="countdown-value" id="seconds">00</span>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+        <p class="countdown-note">Set your reminders and join us for the auspicious moment.</p>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>With love, Shantanu & Aditi</p>
+      <p class="music-credit">
+        Music: Game of Thrones Theme - Indian Classical Version by Mahesh Raghvan
+      </p>
+      <a class="ghost-cta" href="#top">Back to top</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
